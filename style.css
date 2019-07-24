@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+i, cite, em, var, dfn, address {
+  /* prevent faux italic */
+  font-style: normal;
+}
+b, h1, h2, h3, h4, h5, h6, strong, th {
+  /* prevent faux bold */
+  font-weight: normal;
+}
+/* HTML5 display-role reset for older browsers (UC Browser on Android) */
+article, aside, figcaption, figure, footer, header, menu, section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, strong, i, label {
+ font-family: 'QuicksandBold', 'Quicksand', sans-serif;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+header {
+  background: url(images/header-bg.png) no-repeat center;
+  height: 790px;
+  color: #fff;
+  padding: 0 3%;
+}
+
+header a {
+  color: #fff;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+header .wrap {
+  max-width: 1150px;
+  height: 790px;
+  position: relative;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__top .brand {
+  width: 53px;
+  height: 40px;
+  background: url(images/header-livello.png) no-repeat;
+}
+
+.header__top li {
+  margin-left: 52px;
+  padding: 0 5px;
+}
+
+.header__top li:last-child img {
+  position: relative;
+  top: 2px;
+}
+
+.header__top a {  
+  font-size: 18px;
+}
+
+.header__top a:hover {
+  color: #aa9b77;
+}
+
+header h1 {
+  margin-top: 170px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+header p {
+  text-align: center;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 15px auto 0;
+}
+
+header .bottom_link {
+  display: block;
+  margin: 310px auto 0;
+  width: 40px;
+  height: 40px;
+}
+
+.sort {
+  padding: 0 3%;
+  background: #f5f6f7;  
+}
+
+.sort .wrap {
+  margin: 0 auto;
+  height: 143px; 
+  max-width: 1090px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.sort form {
+  margin-top: 61px
+}
+
+.sort label {
+  text-transform: uppercase;
+}
+
+.see_product {
+  color: #fff;
+  background: #aa9b77;
+  width: 204px;
+  height: 52px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 16px;
+  box-sizing: border-box;
+  margin-top: 45px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+main .wrap {
+  max-width: 1090px;
+}
+
+main .men {
+  display: flex;
+  justify-content: space-between;
+}
+
+main p {
+
+}
+
+.line {
+  background: #cccccc;
+  height: 2px;
+  width: 950px;
+  margin-top: 9px;
+}
