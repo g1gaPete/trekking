@@ -36,7 +36,13 @@ article, aside, figcaption, figure, footer, header, menu, section {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span, strong, i, label {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, strong, i, label, ul, li {
  font-family: 'QuicksandBold', 'Quicksand', sans-serif;
 }
 
@@ -150,31 +156,173 @@ header .bottom_link {
   border-radius: 3px;
   font-size: 14px;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 17px;
   box-sizing: border-box;
   margin-top: 45px;
 }
 
 main {
   margin: 0 auto;
+  padding: 0 3%;
+  text-transform: uppercase;  
 }
 
 main .wrap {
   max-width: 1090px;
+  position: relative;
 }
 
 main .men {
+  padding-top: 80px;
   display: flex;
   justify-content: space-between;
+
 }
 
 main p {
-
+  margin-right: 30px;
 }
 
 .line {
   background: #cccccc;
   height: 2px;
-  width: 950px;
+  width: 100%;
   margin-top: 9px;
+}
+
+.product_page {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.product_page span {
+  color: #aa9b77;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product_page a {
+  padding-left: 1px;
+}
+
+.product_page a:last-child {
+  padding-left: 5px;
+}
+
+.product__men {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+main div[class^="sell"] {
+  width: 320px;
+  height: 375px;
+  background: #f5f6f7;  
+  box-sizing: border-box;
+  border: 6px solid #f5f6f7;
+  padding: 17px 24px;
+  position: relative;
+}
+
+main div[class^="sell"]:hover {
+  border: 6px solid #aa9b77;
+  border-radius: 3px;
+}
+
+main div[class^="sell"] ul {
+  display: inline-block;
+  clear: both;
+  float: right;
+  margin-top: -21px;
+}
+
+/*.sell_top {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+a[class^="sell_color"] {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  /*background: pink;*/
+}
+
+.sell_color1 {background: #165eb9;}
+.sell_color2 {background: #ffe637;}
+.sell_color3 {background: #535253;}
+
+.sell_image {
+  display: block;
+  margin: 0 auto;
+  max-width: 146px;
+}
+
+.sell1 p,
+.sell2 p {
+  position: relative;
+  width: 30px;
+}
+
+.sell1 p::after,
+.sell2 p::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(images/arrow-down.png) no-repeat;
+  width: 12px;
+  height: 8px;
+  bottom: 6px;
+  left: 38px;
+}
+
+.sell1 .sell_image {
+  margin-top: 45px;
+}
+
+.sell2 .sell_image {
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+.sell3 .sell_image {
+  margin-top: 35px;
+}
+
+main div[class^="sell"] .sell_bottom {
+  position: absolute;
+  display: block;  
+  bottom: 20px;
+}
+
+.sell_bottom li {
+  font-size: 18px;
+  color: #aa9b77;
+  display: block;
+  width: 100%;
+}
+
+.sell_bottom li::after { 
+  color: #424242;
+  font-size: 22px;
+  position: absolute;
+  display: block;
+  width: 100px;
+  bottom: -3px;
+  left: 190px;
+}
+.sell1 .sell_bottom li::after {
+  content: "5,00€";
+  left: 205px;
+}
+.sell2 .sell_bottom li::after {
+  content: "30,00€";
+}
+.sell3 .sell_bottom li::after {
+  content: "60,00€";
 }
