@@ -179,7 +179,7 @@ main .men {
 
 }
 
-main p {
+.men p {
   margin-right: 30px;
 }
 
@@ -187,28 +187,29 @@ main p {
   background: #cccccc;
   height: 2px;
   width: 100%;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
-.product_page {
+.product_page1 {
   display: block;
   position: absolute;
   right: 0;
+  top: 140px;
   width: 35px;
   height: 35px;
 }
 
-.product_page span {
+.product_page1 span {
   color: #aa9b77;
   font-weight: 700;
   font-size: 16px;
 }
 
-.product_page a {
+.product_page1 a {
   padding-left: 1px;
 }
 
-.product_page a:last-child {
+.product_page1 a:last-child {
   padding-left: 5px;
 }
 
@@ -256,6 +257,8 @@ a[class^="sell_color"] {
 .sell_color1 {background: #165eb9;}
 .sell_color2 {background: #ffe637;}
 .sell_color3 {background: #535253;}
+.sell_color4 {background: #d3a7ac;}
+.sell_color5 {background: #ffffff;}
 
 .sell_image {
   display: block;
@@ -264,13 +267,19 @@ a[class^="sell_color"] {
 }
 
 .sell1 p,
-.sell2 p {
+.sell2 p,
+.sell4 p,
+.sell5 p,
+.sell6 p {
   position: relative;
   width: 30px;
 }
 
 .sell1 p::after,
-.sell2 p::after {
+.sell2 p::after,
+.sell4 p::after,
+.sell5 p::after,
+.sell6 p::after {
   display: block;
   content: "";
   position: absolute;
@@ -284,12 +293,9 @@ a[class^="sell_color"] {
 .sell1 .sell_image {
   margin-top: 45px;
 }
-
 .sell2 .sell_image {
-  padding-left: 15px;
   margin-top: 25px;
 }
-
 .sell3 .sell_image {
   margin-top: 35px;
 }
@@ -326,3 +332,67 @@ main div[class^="sell"] .sell_bottom {
 .sell3 .sell_bottom li::after {
   content: "60,00€";
 }
+
+main .women {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+main .women p {
+  margin-left: 8px;
+}
+
+.product_page2 {
+  display: block;
+  margin-top: 50px;
+  width: 35px;
+  height: 35px;
+}
+
+.product_page2 span {
+  color: #aa9b77;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product_page2 a {
+  padding-left: 1px;
+}
+
+.product_page2 a:last-child {
+  padding-left: 5px;
+}
+
+.product__women {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 130px;
+}
+
+.sell4 .sell_image {
+  margin-top: 33px;
+  padding-right: 35px;
+}
+.sell5 .sell_image {
+  margin-top: 75px;
+  padding-right: 20px;
+}
+.sell6 .sell_image {
+  margin-top: 25px;
+  padding-right: 25px;
+}
+
+.sell4 .sell_bottom li::after {
+  content: "60,00€";
+  left: 185px;
+}
+.sell5 .sell_bottom li::after {
+  content: "80,00€";
+}
+.sell6 .sell_bottom li::after {
+  content: "20,00€";
+}
+
+
